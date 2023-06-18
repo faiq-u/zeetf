@@ -1,0 +1,44 @@
+{% load static %}
+<head>
+    <title>Happy Father's day</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <center><h1>
+        HAPPY FATHER'S DAY!
+    </h1></center>
+
+    <center><div id="img_cont">
+    <img id="Father" src="https://img0cf.b8cdn.com/images/uploads/user_photos/80/14063380_20121122041155.jpg">
+    </div></center>
+
+    <center><p>
+        
+            I wanted to make this website in dedication to my father. If I were to say that I always got along 
+            with my father, I'd<br> unfortuately be lying(as would any other child my age). However, despite our
+            differences, at the end of the day I know <br>how much my father cares about me and the rest of his family.
+            He doesn't have to verbally say it, instead he's able to<br> show it by his actions and that, is ultimately much more meaningful
+            than any long winded cheesy speech about familial<br> love. A father and son relationship is one bound by blood.
+            It isn't something trivial that can be discarded when difficult<br> and upheld when convenient. It is permanent.
+            My identity will forever be associated in some way with my father's,<br> and his with mine. Fortunately, in my case, I've been blessed
+            to have a father whom I can be proud to be associated<br> with. I have the privilege of being the son of a morally
+            upstanding, generous and overall great guy. To return<br> the favour, I now have the responsibility to be someone whom my father can be proud
+            to be associated with.
+        
+    </p></center>
+
+    <center><p>
+        
+            Moving on, father's day is an opportuniy for children to express their respect for their fathers, but I've already<br> kind of done that.
+            Repeating myself has no point and this website isn't going to write itself. Plus, as it's already been<br> done before I want to change things up. Therefore, I've decided to enlist some help.
+            I've compiled the thoughts<br> of the rest of my father's family to show the universal respect all of his family members have for him.
+    
+</p></center>
+            {% for x in content %}
+            <center><form action="{{x.Pers_name}}">
+                
+                <button class="people" name="comment" value="{{x.comment}}">{{x.Pers_name}}</button>
+            </form></center>
+            {% endfor %}
+ 
+</body>

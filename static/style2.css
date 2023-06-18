@@ -1,0 +1,18 @@
+body{
+    background-color:rgb(17, 29, 34);
+    color:white;
+    margin-top: 100px;
+}
+#g_btn{
+    border:none;
+    height:30px;
+    background-color: rgb(253, 74, 217);
+    color:white;
+    margin-top: 20px;
+}
+#g_btn:hover{
+    border:none;
+    height:32px;
+    background-color: rgb(137, 30, 115);
+    color:white;
+}
